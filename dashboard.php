@@ -10,11 +10,11 @@
 <body>
     <div class="all">
         <div class="header">
-            <h1>Dashboard</h1>
-            <h1>Selamat Datang Nama</h1>
+            <div class="pojok"><h1>Dashboard</h1></div>
+            <div class="pojok"><h2>Selamat Datang Nama</h2></div>
         </div>
         <div class="bawah" >
-            <ul>
+            <ul style="list-style-type: none;">
                 <li>Input Penjualan</li>
                 <li>Stok Barang</li>
                 <li>History</li>
