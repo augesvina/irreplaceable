@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2021 at 08:52 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Waktu pembuatan: 29 Sep 2021 pada 09.21
+-- Versi server: 10.4.17-MariaDB
+-- Versi PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,37 +24,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `penjualan`
+-- Struktur dari tabel `login`
 --
 
-CREATE TABLE `penjualan` (
-  `kode_produk` int(11) NOT NULL,
-  `nama_produk` varchar(90) NOT NULL,
-  `kategori` varchar(90) NOT NULL,
-  `gambar_produk` varchar(90) NOT NULL,
-  `qty` int(11) NOT NULL,
-  `harga` int(11) NOT NULL
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `login`
+--
+
+INSERT INTO `login` (`id`, `username`, `email`, `password`) VALUES
+(1, 'irreplaceable', 'irreplaceable@gmail.com', '1234irre');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `penjualan`
+-- Indeks untuk tabel `login`
 --
-ALTER TABLE `penjualan`
-  ADD PRIMARY KEY (`kode_produk`);
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `penjualan`
+-- AUTO_INCREMENT untuk tabel `login`
 --
-ALTER TABLE `penjualan`
-  MODIFY `kode_produk` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

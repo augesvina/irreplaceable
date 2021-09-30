@@ -9,9 +9,8 @@ body {
 
 }
 
-div .header {
-    border: 2 solid black;
+.header {
     display: flex;
     background-color: DodgerBlue;
-    
+    align-content: space-around;
 }
